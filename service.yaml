@@ -7,6 +7,6 @@ spec:
     app: mi-app
   ports:
   - protocol: TCP
-    port: 80      # Puerto accesible dentro del clúster
-    targetPort: 8080 # Puerto del contenedor (debe coincidir con containerPort en `deployment.yaml`)
+    port:   80     # Puerto accesible dentro del clúster
+    targetPort: 3000 # Puerto del contenedor (debe coincidir con containerPort en `deployment.yaml`)
   type: NodePort   # Permite acceder a la aplicación desde fuera de Minikube
